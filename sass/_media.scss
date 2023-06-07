@@ -1,0 +1,10 @@
+@media(min-width: 992px) {
+  .subscription {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__card--join {
+      grid-column: 1/3;
+    }
+  }
+}

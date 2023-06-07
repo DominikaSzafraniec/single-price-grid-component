@@ -1,0 +1,120 @@
+$cyan: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: $lightGray;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 8rem 2rem;
+}
+
+.subscription {
+  &__card {
+    padding: 3rem;
+    
+    &--join {
+      background-color: white;
+    }
+
+    &--cost {
+      background-color: $cyan;
+    }
+
+    &--whyUs {
+      background-color: rgb(0, 196, 196);
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    color: $cyan;
+  }
+
+  &__guarantee {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: $brightYellow;
+  }
+
+  &__info {
+    color: $grayishBlue;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  &__subheading {
+    margin-bottom: 1.5rem;
+    color: $lightGray;
+    font-size: 1.8rem;
+  }
+
+  &__price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+  }
+
+  &__cost {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__time {
+    color: $lightGray;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  &__btn-signUp {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: $brightYellow;
+    color: white;
+    font-weight: 700;
+    transition: background-color .3s;
+    cursor: pointer;
+    &:hover {
+      background-color: yellowgreen;
+    }
+  }
+
+  &__advantage {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: $lightGray;
+  }
+}
+
+
+
+@import './media'
